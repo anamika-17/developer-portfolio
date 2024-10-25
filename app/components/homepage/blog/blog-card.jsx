@@ -1,4 +1,3 @@
-// @flow strict
 import { timeConverter } from '@/utils/time-converter';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,8 +17,8 @@ function BlogCard({ blog }) {
           alt=""
           className='h-full w-full group-hover:scale-110 transition-all duration-300'
         />
-      </div> */}
-{      <div className="p-2 sm:p-3 flex flex-col">
+      </div>
+      <div className="p-2 sm:p-3 flex flex-col">
         <div className="flex justify-between items-center text-[#16f2b3] text-sm">
           <p>{timeConverter(blog.published_at)}</p>
           <div className="flex items-center gap-3">
@@ -32,8 +31,8 @@ function BlogCard({ blog }) {
                 <FaCommentAlt />
                 <span>{blog.comments_count}</span>
               </p>
-            } }
-{           </div>
+            }
+          </div>
         </div>
         <Link target='_blank' href={blog.url}>
           <p className='my-2 lg:my-3 cursor-pointer text-lg text-white sm:text-xl font-medium hover:text-violet-500'>
@@ -46,14 +45,14 @@ function BlogCard({ blog }) {
         <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3'>
           {blog.description}
         </p>
-{/*         { <div className="">
+        {/* <div className="">
           <Link target='_blank' href={blog.url}>
             <button className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs'>
               Read More
             </button>
           </Link>
-        </div> } */}
-{       </div> }
+        </div> */}
+      </div>
     </div>
   );
 };
