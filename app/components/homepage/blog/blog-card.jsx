@@ -18,12 +18,10 @@ function BlogCard({ blog }) {
           <p></p>
           <div className="">
             <p className="">
-              < />
               <span></span>
             </p>
             {
               <p className="">
-                < />
                 <span></span>
               </p>
             }
