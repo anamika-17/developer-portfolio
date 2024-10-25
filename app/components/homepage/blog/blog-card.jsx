@@ -15,7 +15,7 @@ function BlogCard({ blog }) {
       </div>
       <div className="">
         <div className="">
-          <p></p>
+          <p> UEMK Space Observatory</p>
           <div className="">
             <p className="">
               <span></span>
