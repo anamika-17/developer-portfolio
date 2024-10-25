@@ -7,13 +7,13 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-import publications from "./components/homepage/publications";
-import awards from "./components/homepage/awards";
-import membership from "./components/homepage/membership";
-import research from "./components/homepage/research";
-import events from "./components/homepage/events";
-import poster from "./components/homepage/poster";
-import course from "./components/homepage/course";
+// import publications from "./components/homepage/publications";
+// import awards from "./components/homepage/awards";
+// import membership from "./components/homepage/membership";
+// import research from "./components/homepage/research";
+// import events from "./components/homepage/events";
+// import poster from "./components/homepage/poster";
+// import course from "./components/homepage/course";
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
